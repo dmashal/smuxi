@@ -31,6 +31,8 @@ using System.Collections.Generic;
 using Smuxi.Common;
 using Smuxi.Engine;
 
+#if GLADE_SHARP
+
 namespace Smuxi.Frontend.Gnome
 {
     public class ServerListView
@@ -286,3 +288,5 @@ namespace Smuxi.Frontend.Gnome
         }
     }
 }
+
+#endif

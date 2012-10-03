@@ -70,7 +70,7 @@ namespace Smuxi.Frontend.Gnome
             f_Widget.InitProtocols(Frontend.Session.GetSupportedProtocols());
             // these fields doesn't make sense here
             f_Widget.OnStartupConnectCheckButton.Visible = false;
-            f_Widget.NetworkComboBoxEntry.Sensitive = false;
+            //f_Widget.NetworkComboBoxEntry.Sensitive = false;
             f_Widget.ProtocolComboBox.Changed += delegate {
                 CheckConnectButton();
             };

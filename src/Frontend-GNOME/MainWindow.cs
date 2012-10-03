@@ -218,6 +218,7 @@ namespace Smuxi.Frontend.Gnome
             var entryScrolledWindow = new Gtk.ScrolledWindow();
             entryScrolledWindow.ShadowType = Gtk.ShadowType.EtchedIn;
             entryScrolledWindow.HscrollbarPolicy = Gtk.PolicyType.Never;
+            /*
             entryScrolledWindow.SizeRequested += delegate(object o, Gtk.SizeRequestedArgs args) {
                 // predict and set useful heigth
                 var layout = Entry.CreatePangoLayout("Qp");
@@ -239,6 +240,7 @@ namespace Smuxi.Frontend.Gnome
                 };
                 args.Requisition = bestSize;
             };
+            */
             entryScrolledWindow.Add(Entry);
 
             ProgressBar = new Gtk.ProgressBar();
@@ -253,17 +255,17 @@ namespace Smuxi.Frontend.Gnome
 
             NetworkStatusbar = new Gtk.Statusbar();
             NetworkStatusbar.WidthRequest = 300;
-            NetworkStatusbar.HasResizeGrip = false;
+            //NetworkStatusbar.HasResizeGrip = false;
             
             Statusbar = new Gtk.Statusbar();
-            Statusbar.HasResizeGrip = false;
+            //Statusbar.HasResizeGrip = false;
             
             Gtk.HBox status_bar_hbox = new Gtk.HBox();
             status_bar_hbox.Homogeneous = true;
             status_bar_hbox.PackStart(NetworkStatusbar, false, true, 0);
             status_bar_hbox.PackStart(Statusbar, true, true, 0);
 
-            StatusHBox.PackStart(status_bar_hbox);
+            //StatusHBox.PackStart(status_bar_hbox);
             StatusHBox.PackStart(ProgressBar, false, false, 0);
             StatusHBox.ShowAll();
             StatusHBox.NoShowAll = true;

@@ -324,7 +324,7 @@ namespace Smuxi.Frontend.Gnome
             Dispose(false);
         }
 
-        public override void Dispose()
+        public new void Dispose()
         {
             Trace.Call();
 

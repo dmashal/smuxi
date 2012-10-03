@@ -79,7 +79,7 @@ namespace Smuxi.Frontend.Gnome
             vbox.PackStart(sw, true, true, 2);
             
             // add to the dialog
-            VBox.PackStart(vbox, true, true, 2);
+            //VBox.PackStart(vbox, true, true, 2);
             AddButton(_("_Report Bug"), -1);
             AddButton(Gtk.Stock.Quit, 0);
             

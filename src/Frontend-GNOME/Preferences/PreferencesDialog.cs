@@ -38,6 +38,7 @@ using Smuxi.Common;
 using Smuxi.Engine;
 using System.Text.RegularExpressions;
 
+#if GLADE_SHARP
 namespace Smuxi.Frontend.Gnome
 {
     public class PreferencesDialog
@@ -1094,3 +1095,4 @@ namespace Smuxi.Frontend.Gnome
         }
     }
 }
+#endif

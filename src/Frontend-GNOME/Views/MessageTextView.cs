@@ -607,7 +607,8 @@ namespace Smuxi.Frontend.Gnome
              }
              return tagname;
         }
-        
+
+        /*
         void OnExposeEvent(object sender, Gtk.ExposeEventArgs e)
         {
             if (!_ShowMarkerline || _MarkerlineBufferPosition == 0) {
@@ -634,7 +635,7 @@ namespace Smuxi.Frontend.Gnome
 
             window.DrawLine(gc, 0, y, VisibleRect.Width, y);
         }
-
+*/ 
         void CheckBufferSize()
         {
             if (_BufferLines == -1) {

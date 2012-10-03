@@ -311,8 +311,8 @@ namespace Smuxi.Frontend.Gnome
                 return;
             }
 
-            var chatView = (ChatView) e.P0;
-            var newPosition = (int) e.P1;
+            var chatView = (ChatView) e.Child;
+            var newPosition = (int) e.PageNum;
             ThreadPool.QueueUserWorkItem(delegate {
                 try {
                     Frontend.Session.MoveChat(chatView.ChatModel, newPosition);

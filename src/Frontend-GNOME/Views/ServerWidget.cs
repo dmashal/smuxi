@@ -44,11 +44,13 @@ namespace Smuxi.Frontend.Gnome
             }
         }
 
+        /*
         public Gtk.ComboBoxEntry NetworkComboBoxEntry {
             get {
                 return f_NetworkComboBoxEntry;
             }
         }
+        */
 
         public Gtk.CheckButton OnStartupConnectCheckButton {
             get {

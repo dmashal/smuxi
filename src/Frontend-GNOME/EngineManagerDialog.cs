@@ -125,9 +125,8 @@ namespace Smuxi.Frontend.Gnome
             hbox.PackStart(_ComboBox, true, true, 10);
 
             vbox.PackStart(hbox, false, false, 10);
-            vbox.PackStart(lowBandWidthCheckBox);
-            
-            VBox.Add(vbox);
+            //vbox.PackStart(lowBandWidthCheckBox);
+            //VBox.Add(vbox);
             
             ShowAll();
         }
